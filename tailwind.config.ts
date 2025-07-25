@@ -61,7 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				vyws: {
+					orange: 'hsl(var(--vyws-orange))',
+					navy: 'hsl(var(--vyws-navy))',
+					teal: 'hsl(var(--vyws-teal))',
+					'dark-gray': 'hsl(var(--vyws-dark-gray))',
+					'footer-gray': 'hsl(var(--vyws-footer-gray))',
+					'text-gray': 'hsl(var(--vyws-text-gray))'
 				}
+			},
+			fontFamily: {
+				sans: ['Lato', 'Open Sans', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
