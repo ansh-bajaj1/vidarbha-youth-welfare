@@ -62,17 +62,24 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				vyws: {
-					orange: 'hsl(var(--vyws-orange))',
-					navy: 'hsl(var(--vyws-navy))',
-					teal: 'hsl(var(--vyws-teal))',
-					'dark-gray': 'hsl(var(--vyws-dark-gray))',
-					'footer-gray': 'hsl(var(--vyws-footer-gray))',
-					'text-gray': 'hsl(var(--vyws-text-gray))'
+				modern: {
+					primary: 'hsl(var(--text-primary))',
+					secondary: 'hsl(var(--text-secondary))',
+					'card-bg': 'hsl(var(--card-bg))',
+					'border-light': 'hsl(var(--border-light))'
 				}
 			},
 			fontFamily: {
-				sans: ['Lato', 'Open Sans', 'system-ui', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				heading: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
+			},
+			boxShadow: {
+				'soft': '0 4px 20px hsl(var(--shadow-soft))',
+				'card': '0 2px 15px hsl(var(--shadow-soft))',
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

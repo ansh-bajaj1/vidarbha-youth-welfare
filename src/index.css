@@ -38,13 +38,20 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    /* Custom VYWS colors */
-    --vyws-orange: 21 100% 50%;
-    --vyws-navy: 214 100% 17%;
-    --vyws-teal: 180 100% 40%;
-    --vyws-dark-gray: 0 0% 29%;
-    --vyws-footer-gray: 0 0% 23%;
-    --vyws-text-gray: 0 0% 45%;
+    /* Modern Design System Colors */
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 20% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 142 76% 45%;
+    --accent-foreground: 0 0% 100%;
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(263 70% 50%), hsl(220 70% 60%));
+    --card-bg: 0 0% 98%;
+    --text-primary: 222 84% 5%;
+    --text-secondary: 215 25% 30%;
+    --border-light: 220 13% 91%;
+    --shadow-soft: 220 43% 11% / 0.1;
 
     --sidebar-background: 0 0% 98%;
 
