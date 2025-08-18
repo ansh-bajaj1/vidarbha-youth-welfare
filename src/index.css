@@ -38,20 +38,20 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    /* Modern Design System Colors */
-    --primary: 263 70% 50%;
+    /* Teal Design System Colors */
+    --primary: 180 100% 27%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 270 20% 25%;
+    --secondary: 180 25% 25%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 142 76% 45%;
+    --accent: 180 100% 40%;
     --accent-foreground: 0 0% 100%;
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(263 70% 50%), hsl(220 70% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 27%), hsl(180 100% 40%));
     --card-bg: 0 0% 98%;
-    --text-primary: 222 84% 5%;
-    --text-secondary: 215 25% 30%;
-    --border-light: 220 13% 91%;
-    --shadow-soft: 220 43% 11% / 0.1;
+    --text-primary: 210 40% 15%;
+    --text-secondary: 210 15% 30%;
+    --border-light: 180 15% 91%;
+    --shadow-soft: 180 43% 11% / 0.1;
 
     --sidebar-background: 0 0% 98%;
 

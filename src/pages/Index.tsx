@@ -1,19 +1,19 @@
-import ModernNavigation from '@/components/ModernNavigation';
-import HeroSection from '@/components/HeroSection';
-import ModernAboutSection from '@/components/ModernAboutSection';
-import ModernInstitutesSection from '@/components/ModernInstitutesSection';
-import ModernFooter from '@/components/ModernFooter';
+import TealNavigation from '@/components/TealNavigation';
+import TealHeroSection from '@/components/TealHeroSection';
+import TealAboutSection from '@/components/TealAboutSection';
+import TealInstitutesSection from '@/components/TealInstitutesSection';
+import TealFooter from '@/components/TealFooter';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <ModernNavigation />
+      <TealNavigation />
       <main>
-        <HeroSection />
-        <ModernAboutSection />
-        <ModernInstitutesSection />
+        <TealHeroSection />
+        <TealAboutSection />
+        <TealInstitutesSection />
       </main>
-      <ModernFooter />
+      <TealFooter />
     </div>
   );
 };
