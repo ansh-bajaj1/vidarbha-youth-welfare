@@ -1,6 +1,8 @@
 import TealNavigation from '@/components/TealNavigation';
 import TealHeroSection from '@/components/TealHeroSection';
-import TealAboutSection from '@/components/TealAboutSection';
+import WelcomeSection from '@/components/WelcomeSection';
+import AcademicProgramsSection from '@/components/AcademicProgramsSection';
+import AdmissionsSection from '@/components/AdmissionsSection';
 import ManagementSection from '@/components/ManagementSection';
 import TealInstitutesSection from '@/components/TealInstitutesSection';
 import TealFooter from '@/components/TealFooter';
@@ -11,7 +13,9 @@ const Index = () => {
       <TealNavigation />
       <main>
         <TealHeroSection />
-        <TealAboutSection />
+        <WelcomeSection />
+        <AcademicProgramsSection />
+        <AdmissionsSection />
         <ManagementSection />
         <TealInstitutesSection />
       </main>

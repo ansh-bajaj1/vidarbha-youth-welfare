@@ -1,106 +1,141 @@
-import { Phone } from 'lucide-react';
+import { Phone, Calendar, Users, Award, BookOpen } from 'lucide-react';
 
 const TealHeroSection = () => {
   return (
     <section className="relative bg-white">
-      {/* Admission Banner */}
-      <div className="bg-gradient-to-r from-primary to-accent text-white py-4">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center space-x-4">
-            <div className="bg-white/20 p-2 rounded">
-              <Phone className="w-6 h-6" />
+      {/* Top News Ticker */}
+      <div className="bg-red-600 text-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-center space-x-8">
+            <span className="font-bold bg-white text-red-600 px-3 py-1 rounded text-sm">NEWS</span>
+            <div className="flex-1 overflow-hidden">
+              <div className="animate-scroll whitespace-nowrap text-sm">
+                🔔 Admission Open for Academic Year 2024-25 | 📅 Last Date for Application: 30th June 2024 | 🎓 Merit List will be declared on 5th July 2024
+              </div>
             </div>
-            <div>
-              <div className="font-bold">For Admissions:</div>
-              <div className="text-sm">8390292682 / 9011223954</div>
-            </div>
-          </div>
-          <div className="bg-red-600 px-6 py-3 rounded-full font-bold hover:bg-red-700 transition-colors cursor-pointer">
-            Admission Enquiry for All Courses
           </div>
         </div>
       </div>
 
+      {/* Admission Contact Bar */}
+      <div className="bg-primary text-white py-3">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-2">
+              <Phone className="w-4 h-4" />
+              <span className="text-sm">For Admissions: 8390292682 / 9011223954</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Calendar className="w-4 h-4" />
+              <span className="text-sm">Application Deadline: June 30, 2024</span>
+            </div>
+          </div>
+          <button className="bg-accent px-6 py-2 rounded-full font-bold text-sm hover:bg-accent/90 transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
       {/* Main Hero Content */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Left Column - Welcome Message */}
-          <div className="bg-primary text-white rounded-lg p-6">
-            <div className="text-center mb-4">
-              <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <img
-                  src="/lovable-uploads/3c1915c9-a272-42af-8518-60c1ce1003e3.png"
-                  alt="Secretary"
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg">Secretary's Message</h3>
-            </div>
-            <p className="text-sm leading-relaxed mb-4">
-              Welcome to Vidarbha Youth Welfare Society, Amravati. It gives me immense pleasure to serve the society through our distinctive educational institutions spanning over 58 years of excellence.
+      <div className="bg-gradient-to-br from-blue-50 to-teal-50 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Welcome Message */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+              Welcome to VYWS Group of Institutions
+            </h1>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+              Shaping Future Leaders Since 1965 | Excellence in Education, Innovation in Learning
             </p>
-            <button className="bg-white text-primary px-4 py-2 rounded font-semibold text-sm hover:bg-gray-100 transition-colors">
-              Read More
-            </button>
           </div>
 
-          {/* Center Column - Main Banner */}
-          <div className="bg-gradient-to-br from-primary to-accent text-white rounded-lg p-8 text-center">
-            <img
-              src="/lovable-uploads/3c1915c9-a272-42af-8518-60c1ce1003e3.png"
-              alt="VYWS Logo"
-              className="h-16 w-auto mx-auto mb-4 bg-white rounded p-2"
-            />
-            <h1 className="text-2xl font-bold mb-2">VYWS</h1>
-            <p className="text-lg mb-4">Excellence in Education Since 1965</p>
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 mb-4">
-              <h2 className="font-bold mb-2">Our Achievement</h2>
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div>
-                  <div className="text-2xl font-bold text-yellow-300">11</div>
-                  <div className="text-xs">Colleges</div>
+          {/* Three Column Layout */}
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            {/* About VYWS */}
+            <div className="bg-white rounded-lg shadow-card p-8">
+              <div className="text-center mb-6">
+                <div className="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <img
+                    src="/lovable-uploads/3c1915c9-a272-42af-8518-60c1ce1003e3.png"
+                    alt="VYWS Logo"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-yellow-300">19</div>
-                  <div className="text-xs">Schools</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-yellow-300">2</div>
-                  <div className="text-xs">Hostels</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-yellow-300">6</div>
-                  <div className="text-xs">M.C.V.C</div>
-                </div>
+                <h3 className="text-xl font-bold text-primary">About VYWS</h3>
+              </div>
+              <p className="text-sm text-text-secondary leading-relaxed mb-4">
+                Vidarbha Youth Welfare Society, established in 1965, is a premier educational institution dedicated to providing quality education and creating global citizens who contribute meaningfully to society.
+              </p>
+              <button className="w-full bg-primary text-white py-2 px-4 rounded font-semibold text-sm hover:bg-primary/90 transition-colors">
+                Learn More
+              </button>
+            </div>
+
+            {/* Quick Links */}
+            <div className="bg-white rounded-lg shadow-card p-8">
+              <h3 className="text-xl font-bold text-primary mb-6 text-center">Quick Links</h3>
+              <div className="space-y-3">
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <BookOpen className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-medium">Online Admission</span>
+                </a>
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <Users className="w-5 h-5 text-primary" />  
+                  <span className="text-sm font-medium">Student Portal</span>
+                </a>
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <Award className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-medium">Examination Results</span>
+                </a>
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <Calendar className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-medium">Academic Calendar</span>
+                </a>
               </div>
             </div>
+
+            {/* Announcements */}
+            <div className="bg-white rounded-lg shadow-card p-8">
+              <h3 className="text-xl font-bold text-primary mb-6 text-center">Latest Announcements</h3>
+              <div className="space-y-4">
+                <div className="border-l-4 border-accent pl-4">
+                  <p className="text-sm font-medium text-text-primary">Admission Open 2024-25</p>
+                  <p className="text-xs text-text-secondary">June 15, 2024</p>
+                </div>
+                <div className="border-l-4 border-primary pl-4">
+                  <p className="text-sm font-medium text-text-primary">Merit List Declaration</p>
+                  <p className="text-xs text-text-secondary">July 5, 2024</p>
+                </div>
+                <div className="border-l-4 border-accent pl-4">
+                  <p className="text-sm font-medium text-text-primary">Scholarship Applications</p>
+                  <p className="text-xs text-text-secondary">June 20, 2024</p>
+                </div>
+              </div>
+              <button className="w-full mt-4 bg-accent text-white py-2 px-4 rounded font-semibold text-sm hover:bg-accent/90 transition-colors">
+                View All
+              </button>
+            </div>
           </div>
 
-          {/* Right Column - Vision & Mission */}
-          <div className="space-y-6">
-            <div className="bg-yellow-100 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary mb-3">Motto: Lux Vita Caritas</h3>
-              <p className="text-sm text-gray-700 mb-4">
-                Meaning - Education Enlightens the Mind, It Nurtures Life and Inculcates Humanity, Love and Respect
-              </p>
-            </div>
-            
-            <div className="bg-yellow-100 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary mb-3">Vision</h3>
-              <p className="text-sm text-gray-700">
-                VYWS vision is to inspire every child to become worthy Global Citizens, a pride of human race and a potential light of the world.
-              </p>
-            </div>
-
-            <div className="bg-yellow-100 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary mb-3">Mission</h3>
-              <div className="text-sm text-gray-700 space-y-1">
-                <div>T – TEACH</div>
-                <div>I – INSPIRE</div>
-                <div>T – TRANSFORM</div>
-                <div>A – ANALYSE</div>
-                <div>N – NURTURE</div>
-                <div>S – STRIVE FOR EXCELLENCE</div>
+          {/* Stats Section */}
+          <div className="bg-white rounded-lg shadow-card p-8">
+            <h2 className="text-2xl font-bold text-center text-primary mb-8">Our Achievements</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div className="bg-gradient-to-br from-primary to-accent text-white rounded-lg p-6">
+                <div className="text-3xl font-bold mb-2">11</div>
+                <div className="text-sm">Colleges</div>
+              </div>
+              <div className="bg-gradient-to-br from-accent to-primary text-white rounded-lg p-6">
+                <div className="text-3xl font-bold mb-2">19</div>
+                <div className="text-sm">Schools</div>
+              </div>
+              <div className="bg-gradient-to-br from-primary to-accent text-white rounded-lg p-6">
+                <div className="text-3xl font-bold mb-2">2</div>
+                <div className="text-sm">Hostels</div>
+              </div>
+              <div className="bg-gradient-to-br from-accent to-primary text-white rounded-lg p-6">
+                <div className="text-3xl font-bold mb-2">6</div>
+                <div className="text-sm">M.C.V.C</div>
               </div>
             </div>
           </div>
